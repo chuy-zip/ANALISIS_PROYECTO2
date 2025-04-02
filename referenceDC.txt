@@ -1,0 +1,24 @@
+algorithm LevDist(a, b):
+    // INPUT
+    //    a = the first string (0-indexed)
+    //    b = the second string (0-indexed)
+    // OUTPUT
+    //    The Levenshtein distance between strings a and b
+
+    if a.size() = 0:
+        return b.size()
+        
+    if b.size() = 0:
+        return a.size()
+        
+    if a[0] != b[0]:
+        indicator <- 1
+    else:
+        indicator <- 0
+    
+    return min(
+        LevDist(a[1:], b) + 1,  // deletion
+        LevDist(b[1:], a) + 1,  // insertion
+        LevDist(a[1:], b[1:]) + indicator  // substitution
+    )
+
