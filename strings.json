@@ -2,178 +2,139 @@
   "test_cases": [
     {
       "str1": "",
-      "str2": "",
-      "expected_distance": 0
+      "str2": ""
     },
     {
       "str1": "a",
-      "str2": "a",
-      "expected_distance": 0
+      "str2": "a"
     },
     {
       "str1": "a",
-      "str2": "b",
-      "expected_distance": 1
+      "str2": "b"
     },
     {
       "str1": "ab",
-      "str2": "ac",
-      "expected_distance": 1
+      "str2": "ac"
     },
     {
       "str1": "abc",
-      "str2": "def",
-      "expected_distance": 3
+      "str2": "bc"
     },
     {
-      "str1": "kitten",
-      "str2": "sitting",
-      "expected_distance": 3
+      "str1": "ab",
+      "str2": "abc"
     },
     {
-      "str1": "book",
-      "str2": "back",
-      "expected_distance": 2
-    },
-    {
-      "str1": "hello",
-      "str2": "hola",
-      "expected_distance": 3
-    },
-    {
-      "str1": "algorithm",
-      "str2": "altruistic",
-      "expected_distance": 6
-    },
-    {
-      "str1": "intention",
-      "str2": "execution",
-      "expected_distance": 5
+      "str1": "abc",
+      "str2": "def"
     },
     {
       "str1": "open",
-      "str2": "source",
-      "expected_distance": 5
+      "str2": "pen"
     },
     {
-      "str1": "divide",
-      "str2": "conquer",
-      "expected_distance": 6
-    },
-    {
-      "str1": "dynamic",
-      "str2": "programming",
-      "expected_distance": 7
-    },
-    {
-      "str1": "computer",
-      "str2": "science",
-      "expected_distance": 7
-    },
-    {
-      "str1": "distance",
-      "str2": "levenshtein",
-      "expected_distance": 8
-    },
-    {
-      "str1": "abcdefgh",
-      "str2": "ijklmnop",
-      "expected_distance": 8
+      "str1": "book",
+      "str2": "back"
     },
     {
       "str1": "data",
-      "str2": "structures",
-      "expected_distance": 8
+      "str2": "date"
     },
     {
-      "str1": "artificial",
-      "str2": "intelligence",
-      "expected_distance": 9
+      "str1": "hello",
+      "str2": "hola"
     },
     {
-      "str1": "backtracking",
-      "str2": "branchbound",
-      "expected_distance": 7
+      "str1": "kitten",
+      "str2": "sit"
     },
     {
-      "str1": "this is a test",
-      "str2": "this is a trial",
-      "expected_distance": 3
+      "str1": "time",
+      "str2": "space"
     },
     {
-      "str1": "time complexity",
-      "str2": "space complexity",
-      "expected_distance": 5
+      "str1": "code",
+      "str2": "coder"
     },
     {
-      "str1": "the quick brown",
-      "str2": "the lazy dog",
-      "expected_distance": 9
+      "str1": "algo",
+      "str2": "logic"
     },
     {
-      "str1": "palindrome",
-      "str2": "emordnilap",
-      "expected_distance": 8
+      "str1": "short",
+      "str2": "long"
     },
     {
-      "str1": "abcdefghij",
-      "str2": "klmnopqrst",
-      "expected_distance": 10
+      "str1": "divide",
+      "str2": "div"
     },
     {
-      "str1": "Levenshtein",
-      "str2": "distance",
-      "expected_distance": 8
+      "str1": "pascal",
+      "str2": "python"
     },
     {
-      "str1": "minimum edit",
-      "str2": "median edit",
-      "expected_distance": 4
+      "str1": "dynamic",
+      "str2": "drama"
+    },
+    {
+      "str1": "kitten",
+      "str2": "sitting"
+    },
+    {
+      "str1": "abcdefg",
+      "str2": "bcdefg"
+    },
+    {
+      "str1": "this is",
+      "str2": "that is"
+    },
+    {
+      "str1": "algorithm",
+      "str2": "algebra"
+    },
+    {
+      "str1": "computer",
+      "str2": "commuter"
     },
     {
       "str1": "polynomial",
-      "str2": "exponential",
-      "expected_distance": 6
+      "str2": "binomial"
     },
     {
-      "str1": "short string",
-      "str2": "long string",
-      "expected_distance": 4
+      "str1": "backtracking",
+      "str2": "tracking"
     },
     {
-      "str1": "divide and conquer",
-      "str2": "dynamic programming",
-      "expected_distance": 11
+      "str1": "levenshtein",
+      "str2": "algorithm"
     },
     {
-      "str1": "backtracking algorithm",
-      "str2": "greedy algorithm",
-      "expected_distance": 10
+      "str1": "divide and",
+      "str2": "conquer"
     },
     {
-      "str1": "Lorem ipsum dolor",
-      "str2": "Lorem ipsum sit",
-      "expected_distance": 5
+      "str1": "recursion",
+      "str2": "complexity"
     },
     {
-      "str1": "The Levenshtein distance",
-      "str2": "Levenshtein metric",
-      "expected_distance": 9
+      "str1": "data struct",
+      "str2": "algorithms"
     },
     {
-      "str1": "data structures and algorithms",
-      "str2": "algorithms and data structures",
-      "expected_distance": 6
+      "str1": "the quick fox",
+      "str2": "the lazy dog"
     },
     {
-      "str1": "In computer science",
-      "str2": "In computational science",
-      "expected_distance": 10
+      "str1": "intention no",
+      "str2": "execution"
     },
     {
-      "str1": "The quick brown fox jumps",
-      "str2": "The lazy dog jumps over",
-      "expected_distance": 13
+      "str1": "open source",
+      "str2": "closed source"
+    },
+    {
+      "str1": "divide and program",
+      "str2": "divided programmin"
     }
   ]
 }
