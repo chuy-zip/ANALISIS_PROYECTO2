@@ -105,10 +105,6 @@
       "str2": "tracking"
     },
     {
-      "str1": "levenshtein",
-      "str2": "algorithm"
-    },
-    {
       "str1": "divide and",
       "str2": "conquer"
     },
@@ -117,24 +113,28 @@
       "str2": "complexity"
     },
     {
+      "str1": "levenshtein",
+      "str2": "algorithm"
+    },
+    {
+      "str1": "the crazy fox",
+      "str2": "a lazy do"
+    },
+    {
       "str1": "data struct",
       "str2": "algorithms"
     },
     {
-      "str1": "the quick fox",
-      "str2": "the lazy dog"
+      "str1": "intention none",
+      "str2": "execution n"
     },
     {
-      "str1": "intention no",
-      "str2": "execution"
-    },
-    {
-      "str1": "open source",
-      "str2": "closed source"
+      "str1": "opened source",
+      "str2": "close source"
     },
     {
       "str1": "divide and program",
-      "str2": "divided programmin"
+      "str2": "divided programming"
     }
   ]
 }

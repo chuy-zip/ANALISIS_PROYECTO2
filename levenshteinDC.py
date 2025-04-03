@@ -49,7 +49,7 @@ for index, strings in enumerate(test_cases, start=1):
     str1 = strings["str1"]
     str2 = strings["str2"]
 
-    print(f"Caso: {index } con cadenas: '{str1}' y '{str2}' ")
+    print(f"\nCaso: {index } con cadenas: '{str1}' y '{str2}' ")
 
     start_time = time.perf_counter()
     ld = levenshtein_distance_DC(str1, str2)
@@ -57,7 +57,7 @@ for index, strings in enumerate(test_cases, start=1):
 
     exec_time = end_time - start_time
 
-    print(f"Resultado: {ld}")
+    print(f"Resultado: {ld} con tiempo {exec_time}")
     execution_times.append(exec_time)
     indexes.append(index)
 
