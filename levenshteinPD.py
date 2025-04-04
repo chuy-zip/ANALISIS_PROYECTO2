@@ -12,29 +12,37 @@ def load_test_cases(filename):
 # Algorithm obtained from:
 # https://how.dev/answers/the-levenshtein-distance-algorithm
 def algh_levenshtein(a, b):
-    # Declaring array 'D' with rows = len(a) + 1 and columns = len(b) + 1:
-    D = [[0 for i in range(len(b) + 1)] for j in range(len(a) + 1)]
+    print(f"\nOriginal: {a}")
+    print(f"Cambiar a: {b}")
 
-    # Initialising first row:
-    for i in range(len(a) + 1):
-        D[i][0] = i
+    # Dictionary for saving subproblems results
+    memo = {}
 
-    # Initialising first column:
-    for j in range(len(b) + 1):
-        D[0][j] = j
+    def dist(i, j):
+        # The subproblem was already calculated
+        if (i, j) in memo:
+            return memo[(i, j)]
 
-    for i in range(1, len(a) + 1):
-        for j in range(1, len(b) + 1):
-            if a[i - 1] == b[j - 1]:
-                D[i][j] = D[i - 1][j - 1]
-            else:
-                # Adding 1 to account for the cost of operation
-                insertion = 1 + D[i][j - 1]
-                deletion = 1 + D[i - 1][j]
-                replacement = 1 + D[i - 1][j - 1]
+        # Base case
+        if i == 0:
+            return j
+        if j == 0:
+            return i
 
-                # Choosing the best option:
-                D[i][j] = min(insertion, deletion, replacement)
+        if a[i - 1] == b[j - 1]:
+            cost = dist(i - 1, j - 1)
+        else:
+            insert_op = 1 + dist(i, j - 1) # Insert character
+            delete_op = 1 + dist(i - 1, j) # Delete character
+            replace_op = 1 + dist(i - 1, j - 1) # Replace character
+            cost = min(insert_op, delete_op, replace_op)
+
+        memo[(i, j)] = cost  # Save cost in dictionary
+        return cost
+
+    result = dist(len(a), len(b))
+    print("Levenshtein Distance:", result)
+    return result
 
 json_data = load_test_cases("strings.json")
 
